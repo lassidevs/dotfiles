@@ -61,6 +61,10 @@ return {
 
 				opts.desc = "Restart LSP"
 				keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+				vim.keymap.set("n", "<leader>rd", function()
+					vim.lsp.stop_client(vim.lsp.get_clients())
+				end, { desc = "Disable all active LSP clients" })
 			end,
 		})
 

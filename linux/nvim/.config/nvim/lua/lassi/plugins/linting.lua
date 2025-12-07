@@ -1,16 +1,17 @@
 return {
 	"mfussenegger/nvim-lint",
 	event = { "BufReadPre", "BufNewFile" },
+
 	config = function()
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			javascript = { "eslint_d" },
-			typescript = { "eslint_d" },
-			javascriptreact = { "eslint_d" },
-			typescriptreact = { "eslint_d" },
-			svelte = { "eslint_d" },
-			vue = { "eslint_d" },
+			javascript = { "biomejs" },
+			typescript = { "biomejs" },
+			javascriptreact = { "biomejs" },
+			typescriptreact = { "biomejs" },
+			svelte = { "biomejs" },
+			vue = { "biomejs" },
 			python = { "pylint" },
 		}
 
