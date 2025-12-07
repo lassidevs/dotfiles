@@ -3,7 +3,7 @@ return {
 
 	keys = {
 		{
-			"<leader><F5>",
+			"<leader>u",
 			function()
 				vim.cmd.UndotreeToggle()
 			end,
